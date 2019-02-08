@@ -2,14 +2,11 @@
     namespace credit;
     
     require 'Luhn.php';
+
     if(isset($_POST['nombre'])){
         if(!preg_match("#^[0-9]{16}#",$_POST['nombre'])){
             echo "Le format <strong>".$_POST['nombre']."</strong> est invalide vous devez rentrer un nombre à 16 chiffres";
-        }
-        if(strlen($_POST['nombre']) > 16){
-            echo "Vous devez rentrer un nombre à 16 chiffre";
-        }
-        if(preg_match("#^[0]{16,16}$#",$_POST['nombre'])){
+        }elseif(preg_match("#^[0]{16,16}$#",$_POST['nombre'])){
             echo "Bien tenté mais le format avec seize zéro ne passe pas";
         }else{
             $nombre = $_POST['nombre'];
@@ -20,6 +17,10 @@
                 echo "Le numéro de carte n'est pas valide";
             }
         }
+        if(strlen($_POST['nombre']) > 16){
+            echo "Vous devez rentrer un nombre à 16 chiffre";
+        }
+        
         
     }
 ?>
