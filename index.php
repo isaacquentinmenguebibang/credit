@@ -17,7 +17,9 @@
                     <?php include('menu.php'); ?>
                 </menu>
                 <section class="col-md-6">
-                    <img src="image/carte-visa.png" alt="" srcset="">
+                    <p style="text-align:center">
+                        <img src="image/carte-visa.png" alt="carte bancaire" srcset="">
+                    </p>
                 </section>
             </div>
         </div>
