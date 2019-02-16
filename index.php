@@ -16,9 +16,11 @@
                 <menu class="col-md-3">
                     <?php include('menu.php'); ?>
                 </menu>
-                <section class="col-md-6">
+                <section class="col-md-9">
                     <p style="text-align:center">
-                        <img src="image/carte-visa.png" alt="carte bancaire" srcset="">
+                        <img src="image/gim.png" alt="gim" srcset="">
+                        <img src="image/mastercard.png" alt="mastercard" srcset="">
+                        <img src="image/visa.png" alt="visa" srcset="">
                     </p>
                 </section>
             </div>

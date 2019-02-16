@@ -9,7 +9,7 @@
         margin-top: 15px;
       }
       img{
-          width: 70%;
+          width: 32%;
       }
       .navbar-inverse {
          background-color: #cccccc;
